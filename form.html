@@ -14,14 +14,14 @@ xhr.addEventListener("readystatechange", function() {
 
 xhr.open("POST", "https://mc4zjl56xtv07dhwl37nkhdwq8gq.auth.marketingcloudapis.com/v2/token");
 xhr.setRequestHeader("Content-Type", "application/json");
-      xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
 
 xhr.send(data);
 
-console.log(data);
+
 
 // FINE
-
+/*
 var data = JSON.stringify({"definitionKey":"Test Optin CDT 03","status":"Active","name":"Unique Def - Test Optin CDT 3","description":"Created via REST POSTMAN","classification":"Default Transactional","content":{"customerKey":"f5ed5072-a30c-44ff-bf5d-ada49d541d8a"},"subscriptions":{"list":"All Subscribers - 2069","dataExtension":"D03ED87A-B693-4D9E-B9BD-8A30F0B713D4","autoAddSubscriber":true,"updateSubscriber":true},"options":{"trackLinks":true}});
 
 var xhr = new XMLHttpRequest();
@@ -61,7 +61,7 @@ xhr.setRequestHeader("Content-Type", "application/json");
 xhr.send(data);
 
 console.log(data);
-
+*/
 // FINE
     </script>
   </head>
