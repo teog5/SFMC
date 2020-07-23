@@ -6,7 +6,6 @@
 
 var xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
-xhr.header("Access-Control-Allow-Origin", '*'); 
 xhr.addEventListener("readystatechange", function() {
   if(this.readyState === 4) {
     console.log(this.responseText);
@@ -15,6 +14,7 @@ xhr.addEventListener("readystatechange", function() {
 
 xhr.open("POST", "https://mc4zjl56xtv07dhwl37nkhdwq8gq.auth.marketingcloudapis.com/v2/token");
 xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
 
 xhr.send(data);
 
